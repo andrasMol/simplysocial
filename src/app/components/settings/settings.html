@@ -1,0 +1,51 @@
+<div class="settings">
+
+  <div>
+    <simply-social-navbar></simply-social-navbar>
+  </div>
+
+  <h1>Settings</h1>
+
+  <div class="account">
+
+    <div class="left-account">
+      <div class="title">ACCOUNT</div>
+      <img src="assets/images/profile_pic_medium.png" class="profile-pic-settings">
+    </div>
+    <div class="right-account">
+      <input type="text" ng-model="settings.user.displayName">
+      <input type="email" ng-model="settings.user.email">
+      <input type="password" ng-model="settings.user.password">
+    </div>
+    
+  </div>
+  
+  <div class="notifications">
+    <div class="title notification-title">NOTIFICATIONS</div>
+    <form>
+      <div class="notification-setting" ng-repeat="notification in settings.user.notificationSettings">
+        <!-- switches -->
+        <div class="switch-and-text">
+          <switch id="enabled" name="enabled" ng-model="notification.value" class="green"></switch>
+          <div class="switch-text">{{notification.text}}</div>
+        </div>
+          
+      </div>
+    </form>
+  </div>
+
+  <div class="privacy">
+  <div class="title privacy-title">PRIVACY</div>
+    <div class="privacy-grouping" ng-repeat="privacyGroup in settings.user.privacySettings">
+      <div class="sub-title">{{privacyGroup.grouping}}</div>
+      <div class="privacy-grouping-item" ng-repeat="item in privacyGroup.values">
+        <input type="radio" name="{{privacyGroup.grouping}}" ng-model="privacyGroup.selected" value="{{item.value}}" id="{{privacyGroup.grouping}}-{{item.value}}">
+        <label for="{{privacyGroup.grouping}}-{{item.value}}"><span></span>{{item.text}}</label>
+      </div>
+    </div>
+
+  </div>
+
+  <button ng-click="settings.saveSettings()" class="btn save-btn">Save Settings</button>
+
+</div>

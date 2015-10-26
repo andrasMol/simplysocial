@@ -1,0 +1,30 @@
+<div class="navbar">
+
+  <div class="header">
+    <a class="title" ui-sref="home">
+      <img src="assets/images/speachBubble_coloured.png" class="logo-pic">
+      <span class="title-text">
+        <span class="dark">simply</span><span class="light">social</span>
+    </a>
+  </div>
+
+  <div class="right-side">
+    <img src="assets/images/addSpeachBubble_coloured.png" class="popover-button" ng-click="vm.openCreateNewMessage()">
+    <!-- <button ng-click="vm.openCreateNewMessage()" class="popover-button"> Create</button> -->
+    
+    <input type="text" class="search-input" />
+    <div class="pic-and-dropdown" ng-mouseenter="vm.showDropdown = true" ng-mouseleave="vm.showDropdown = false">
+      <img src="assets/images/profile_pic.png" class="profile-pic">
+      <div class="dropdown" ng-if="vm.showDropdown">
+        <ul>
+          <li><a ui-sref="profile">Profile</a></li>
+          <li><a ui-sref="followers">Followers</a></li>
+          <li><a ui-sref="following">Following</a></li>
+          <li class="last-li-item"><a ui-sref="settings">Settings</a></li>
+        </ul>
+      </div>
+    </div>
+      
+    
+  </div>
+</div>

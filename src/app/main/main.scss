@@ -1,0 +1,71 @@
+.animate-post.ng-leave {
+  transition: 0.22s linear all;
+}
+.animate-post.ng-enter {
+  opacity: 0;
+  transition: 1s;
+}
+.animate-post.ng-leave.ng-leave-active {
+  opacity: 0;
+  transition: .22s;
+}
+.animate-post.ng-leave,
+.animate-post.ng-enter.ng-enter-active {
+  opacity: 1;
+}
+
+.home {
+
+  .big-image {
+    background: url(../assets/images/bg.png) no-repeat scroll;
+    height: 25rem;
+    width: auto;
+
+    @media (max-width: $break-point-small) {
+      width: $post-width + 5rem;
+    }
+    @media (min-width: $break-point-small) and (max-width: $break-point-medium) {
+      width: $post-width + 10rem;
+    }
+    @media (min-width: $break-point-medium) and (max-width: $break-point-medium2) {
+      width: $post-width + 15rem;
+    }
+  }
+
+  .filters {
+    margin: 0 auto 0 auto;
+    padding-top: 5.5rem;
+    position: relative;
+    width: $post-width;
+
+    button {
+      background: transparent;
+      border: 0;
+      color: $white;
+      cursor: pointer;
+      font-weight: 500;
+      font-size: .8rem;
+      margin-right: 2.5rem;
+
+      &:focus {
+        outline: 0;
+      }
+    }
+
+    .options {
+      cursor: pointer;
+      position: absolute;
+      right: 0;
+    }
+
+    .selected {
+      border-bottom: .25rem $secondary-links solid;
+      padding-bottom: 1.2rem;  
+    }
+  }
+
+  .scrollable-header-image {
+    position: fixed;
+    z-index: 1000;
+  }
+}
