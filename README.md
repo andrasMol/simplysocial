@@ -1,7 +1,5 @@
 # simplysocial
 
-Originally I had all my work committed to a private repo on my normal github account, but since you guys wanted it to be an open repo and I don't want anyone at my current company knowing that I'm doing a coding challenge for someone else, I moved the repo to this new account :) In the process I lost my commit history -- sorry about that. If you care about the commit history I can add you as a collaborator to the original repo.
-
 ##Seed
 I used the [gulp angular yo generator](https://github.com/Swiip/generator-gulp-angular) to get started. I hadn't used this generator before, so I figured I would give it a try for this project. I found it to be really awesome, giving all the necessary tools right out of the box. 
 I also decided to use typescript as a test to see how quickly a project can be brought up from the ground and found it very easy. Please see below for a more detailed explanation.
