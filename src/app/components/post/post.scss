@@ -27,14 +27,12 @@
     overflow: hidden;
     width: 80%;
 
-    .expand-collapse {
-      margin-left: 3.5rem;
+    .data {
+      width: 75%;
     }
 
-    .data {
-      display: inline-block;
-      width: 90%;
-      max-width: 90%;
+    .expand-collapse {
+      margin-left: 3.5rem;
     }
 
     .post-image {
@@ -43,11 +41,6 @@
 
     .profile-pic {
       margin: 0 0.4rem 0 0.2rem;
-    }
-
-    .top-items {
-      display: inline;
-      width: 100%;
     }
   }
 }
