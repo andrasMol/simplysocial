@@ -31,10 +31,6 @@
       width: 75%;
     }
 
-    .expand-collapse {
-      margin-left: 3.5rem;
-    }
-
     .post-image {
       width: calc(100% + 2rem);
     }
@@ -79,7 +75,7 @@
     color: $post-display-name;
     font-weight: 700;
     font-size: 1.2rem;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
   }
 
   .expand-collapse {
@@ -88,7 +84,7 @@
     color: $general-links;
     cursor: pointer;
     font-size: .8rem;
-    margin-left: 4.5rem;
+    margin-left: 4.2rem;
     padding: 0;
 
     &:focus {
@@ -117,6 +113,7 @@
 
   .profile-pic {
     border-radius: .2rem;
+    float: left;
     height: 2.5rem;
     margin: 0 0.4rem 0 0.2rem;
     min-width: 2.5rem;
@@ -164,9 +161,6 @@
     padding-top: 1rem;
   }
 
-  .top-items {
-    display: inline;
-  }
 } 
 
 .home-create {
